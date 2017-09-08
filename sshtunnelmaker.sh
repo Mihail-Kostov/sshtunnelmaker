@@ -37,3 +37,4 @@ Internet connection is needed"
 # First ssh logon
  ssh -i $HOME/.sshtunnel/id_rsa.pub -NnR $forwardingport:localhost:$sshport $server -p$sshportserver &
  echo "Great !!! Reverse ssh is now working."
+ echo "ssh -i "$HOME"/.sshtunnel/id_rsa.pub -NnR "$forwardingport":localhost:"$sshport" "$server" -p"$sshportserver" &"
